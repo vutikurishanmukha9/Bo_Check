@@ -25,61 +25,72 @@ async def get_overview_stats(
     
     Returns total movies, theaters, shows, and price ranges.
     """
-    # Get city
-    city_result = await db.execute(
-        select(City).where(City.code == city.upper())
-    )
-    city_obj = city_result.scalar_one_or_none()
-    
-    if not city_obj:
+    try:
+        # Get city
+        city_result = await db.execute(
+            select(City).where(City.code == city.upper())
+        )
+        city_obj = city_result.scalar_one_or_none()
+        
+        if not city_obj:
+            return {
+                "city": city.upper(),
+                "total_movies": 0,
+                "total_theaters": 0,
+                "total_shows": 0,
+                "message": "No data available for this city"
+            }
+        
+        # Count theaters
+        theater_count = await db.execute(
+            select(func.count()).select_from(Theater).where(Theater.city_id == city_obj.id)
+        )
+        
+        # Count shows for today
+        today = datetime.now().date()
+        show_count = await db.execute(
+            select(func.count())
+            .select_from(Show)
+            .join(Theater)
+            .where(Theater.city_id == city_obj.id)
+            .where(func.date(Show.showtime) == today)
+        )
+        
+        # Get price stats
+        price_stats = await db.execute(
+            select(
+                func.min(SeatCategory.price),
+                func.max(SeatCategory.price),
+                func.avg(SeatCategory.price),
+            )
+            .select_from(SeatCategory)
+            .join(Show)
+            .join(Theater)
+            .where(Theater.city_id == city_obj.id)
+        )
+        min_price, max_price, avg_price = price_stats.one()
+        
+        return {
+            "city": city.upper(),
+            "city_name": city_obj.name,
+            "total_theaters": theater_count.scalar() or 0,
+            "total_shows_today": show_count.scalar() or 0,
+            "price_range": {
+                "min": float(min_price) if min_price else 0,
+                "max": float(max_price) if max_price else 0,
+                "avg": round(float(avg_price), 2) if avg_price else 0,
+            },
+        }
+    except Exception:
+        # Return demo data if database is unavailable
         return {
             "city": city.upper(),
             "total_movies": 0,
             "total_theaters": 0,
-            "total_shows": 0,
-            "message": "No data available for this city"
+            "total_shows_today": 0,
+            "price_range": {"min": 0, "max": 0, "avg": 0},
+            "message": "Database unavailable - using demo mode"
         }
-    
-    # Count theaters
-    theater_count = await db.execute(
-        select(func.count()).select_from(Theater).where(Theater.city_id == city_obj.id)
-    )
-    
-    # Count shows for today
-    today = datetime.now().date()
-    show_count = await db.execute(
-        select(func.count())
-        .select_from(Show)
-        .join(Theater)
-        .where(Theater.city_id == city_obj.id)
-        .where(func.date(Show.showtime) == today)
-    )
-    
-    # Get price stats
-    price_stats = await db.execute(
-        select(
-            func.min(SeatCategory.price),
-            func.max(SeatCategory.price),
-            func.avg(SeatCategory.price),
-        )
-        .select_from(SeatCategory)
-        .join(Show)
-        .join(Theater)
-        .where(Theater.city_id == city_obj.id)
-    )
-    min_price, max_price, avg_price = price_stats.one()
-    
-    return {
-        "city": city.upper(),
-        "city_name": city_obj.name,
-        "total_theaters": theater_count.scalar() or 0,
-        "total_shows_today": show_count.scalar() or 0,
-        "price_range": {
-            "min": float(min_price) if min_price else 0,
-            "max": float(max_price) if max_price else 0,
-            "avg": round(float(avg_price), 2) if avg_price else 0,
-        },
-    }
 
 
 @router.get("/movie/{movie_id}")

@@ -26,19 +26,23 @@ async def get_theaters(
     - **city**: City code (MUM, DEL, BLR, etc.)
     - **chain**: Optional filter by theater chain
     """
-    query = (
-        select(Theater)
-        .join(City)
-        .where(City.code == city.upper())
-    )
-    
-    if chain:
-        query = query.where(Theater.chain.ilike(f"%{chain}%"))
-    
-    result = await db.execute(query)
-    theaters = result.scalars().all()
-    
-    return [TheaterResponse.model_validate(t) for t in theaters]
+    try:
+        query = (
+            select(Theater)
+            .join(City)
+            .where(City.code == city.upper())
+        )
+        
+        if chain:
+            query = query.where(Theater.chain.ilike(f"%{chain}%"))
+        
+        result = await db.execute(query)
+        theaters = result.scalars().all()
+        
+        return [TheaterResponse.model_validate(t) for t in theaters]
+    except Exception:
+        # Return empty list if database is unavailable (demo mode)
+        return []
 
 
 @router.get("/{theater_id}")

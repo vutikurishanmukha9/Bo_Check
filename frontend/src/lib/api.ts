@@ -1,174 +1,192 @@
-// API client for Bo_Check backend
+/**
+ * API Client for Bo_Check Backend
+ * Connects the frontend to the FastAPI backend
+ */
 
-import type {
-    City,
-    Movie,
-    MovieListResponse,
-    Theater,
-    Show,
-    StatsResponse,
-    TrendingMovie,
-    PriceComparison,
-} from "@/types/movie";
+// API Base URL - uses environment variable or defaults to localhost
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
+const API_PREFIX = '/api/v1';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1";
+/**
+ * Generic API fetch wrapper with error handling
+ */
+async function apiFetch<T>(endpoint: string, options?: RequestInit): Promise<T> {
+    const url = `${API_BASE_URL}${API_PREFIX}${endpoint}`;
 
-class ApiError extends Error {
-    constructor(public status: number, message: string) {
-        super(message);
-        this.name = "ApiError";
+    const response = await fetch(url, {
+        ...options,
+        headers: {
+            'Content-Type': 'application/json',
+            ...options?.headers,
+        },
+    });
+
+    if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.detail || `API Error: ${response.status}`);
     }
+
+    return response.json();
 }
 
-async function fetchApi<T>(endpoint: string, options?: RequestInit): Promise<T> {
-    const url = `${API_BASE_URL}${endpoint}`;
+// ============================================
+// API Response Types
+// ============================================
 
-    try {
-        const response = await fetch(url, {
-            headers: {
-                "Content-Type": "application/json",
-                ...options?.headers,
-            },
-            ...options,
-        });
-
-        if (!response.ok) {
-            throw new ApiError(response.status, `API error: ${response.statusText}`);
-        }
-
-        return response.json();
-    } catch (error) {
-        if (error instanceof ApiError) {
-            throw error;
-        }
-        throw new Error(`Network error: ${error}`);
-    }
+export interface Movie {
+    id: number;
+    name: string;
+    language: string;
+    duration_minutes?: number;
+    genre?: string;
+    rating?: number;
+    poster_url?: string;
+    bms_code?: string;
 }
 
-// Cities API
+export interface MovieListResponse {
+    movies: Movie[];
+    total: number;
+    page: number;
+    per_page: number;
+    city: string;
+}
+
+export interface City {
+    id: number;
+    name: string;
+    code: string;
+    state?: string;
+}
+
+export interface Theater {
+    id: number;
+    name: string;
+    address?: string;
+    chain?: string;
+    city_id: number;
+}
+
+export interface Show {
+    id: number;
+    showtime: string;
+    format?: string;
+    language?: string;
+    is_available: boolean;
+    seat_categories?: SeatCategory[];
+}
+
+export interface SeatCategory {
+    name: string;
+    price: number;
+    available: number;
+    total: number;
+}
+
+export interface OverviewStats {
+    city: string;
+    city_name?: string;
+    total_theaters: number;
+    total_shows_today: number;
+    price_range: {
+        min: number;
+        max: number;
+        avg: number;
+    };
+    message?: string;
+}
+
+export interface TrendingMovie {
+    rank: number;
+    movie: {
+        id: number;
+        name: string;
+        language: string;
+        rating?: number;
+        poster?: string;
+    };
+    show_count: number;
+    avg_availability: number;
+}
+
+export interface TrendingResponse {
+    city: string;
+    trending: TrendingMovie[];
+}
+
+// ============================================
+// API Methods
+// ============================================
+
+/**
+ * Cities API
+ */
 export const citiesApi = {
-    getAll: () => fetchApi<City[]>("/cities"),
-    getByCode: (code: string) => fetchApi<City>(`/cities/${code}`),
+    getAll: () => apiFetch<City[]>('/cities'),
+    getByCode: (code: string) => apiFetch<City>(`/cities/${code}`),
 };
 
-// Movies API
+/**
+ * Movies API
+ */
 export const moviesApi = {
-    getAll: (params: {
-        city: string;
-        page?: number;
-        per_page?: number;
-        language?: string;
-        genre?: string;
-    }) => {
-        const searchParams = new URLSearchParams({
-            city: params.city,
-            page: String(params.page || 1),
-            per_page: String(params.per_page || 20),
-        });
-        if (params.language) searchParams.set("language", params.language);
-        if (params.genre) searchParams.set("genre", params.genre);
+    getList: (city: string, page = 1, perPage = 20) =>
+        apiFetch<MovieListResponse>(`/movies?city=${city}&page=${page}&per_page=${perPage}`),
 
-        return fetchApi<MovieListResponse>(`/movies?${searchParams}`);
-    },
-
-    getById: (id: number) => fetchApi<Movie>(`/movies/${id}`),
+    getById: (movieId: number) =>
+        apiFetch<Movie>(`/movies/${movieId}`),
 
     getShows: (movieId: number, city: string, date?: string) => {
-        const searchParams = new URLSearchParams({ city });
-        if (date) searchParams.set("date", date);
-
-        return fetchApi<{
+        let endpoint = `/movies/${movieId}/shows?city=${city}`;
+        if (date) endpoint += `&date=${date}`;
+        return apiFetch<{
             movie: Movie;
             city: string;
             date: string;
-            theaters: {
+            theaters: Array<{
                 theater: Theater;
                 shows: Show[];
-            }[];
-        }>(`/movies/${movieId}/shows?${searchParams}`);
+            }>;
+        }>(endpoint);
     },
 
     search: (query: string, city: string) =>
-        fetchApi<Movie[]>(`/movies/search/${encodeURIComponent(query)}?city=${city}`),
+        apiFetch<Movie[]>(`/movies/search/${query}?city=${city}`),
 };
 
-// Theaters API
+/**
+ * Theaters API
+ */
 export const theatersApi = {
-    getAll: (city: string, chain?: string) => {
-        const searchParams = new URLSearchParams({ city });
-        if (chain) searchParams.set("chain", chain);
+    getByCity: (city: string) =>
+        apiFetch<Theater[]>(`/theaters?city=${city}`),
 
-        return fetchApi<Theater[]>(`/theaters?${searchParams}`);
-    },
-
-    getById: (id: number) => fetchApi<Theater>(`/theaters/${id}`),
-
-    getShows: (theaterId: number, date?: string) => {
-        const searchParams = date ? new URLSearchParams({ date }) : "";
-        return fetchApi<{
-            theater: Theater;
-            date: string;
-            movies: {
-                movie: Movie;
-                shows: Show[];
-            }[];
-        }>(`/theaters/${theaterId}/shows${searchParams ? `?${searchParams}` : ""}`);
-    },
+    getById: (theaterId: number) =>
+        apiFetch<Theater>(`/theaters/${theaterId}`),
 };
 
-// Shows API
+/**
+ * Shows API
+ */
 export const showsApi = {
-    getById: (id: number) =>
-        fetchApi<{
-            id: number;
-            showtime: string;
-            format: string;
-            movie: { id: number; name: string; poster: string };
-            theater: { id: number; name: string; address: string };
-            seat_categories: {
-                name: string;
-                price: number;
-                total_seats: number;
-                available_seats: number;
-                occupancy_percent: number;
-            }[];
-        }>(`/shows/${id}`),
-
-    getSeats: (showId: number) =>
-        fetchApi<{
-            show_id: number;
-            total_seats: number;
-            available_seats: number;
-            overall_occupancy: number;
-            categories: {
-                name: string;
-                price: number;
-                total: number;
-                available: number;
-                booked: number;
-                occupancy: number;
-            }[];
-        }>(`/shows/${showId}/seats`),
+    getByTheater: (theaterId: number, date?: string) => {
+        let endpoint = `/shows?theater_id=${theaterId}`;
+        if (date) endpoint += `&date=${date}`;
+        return apiFetch<Show[]>(endpoint);
+    },
 };
 
-// Stats API
+/**
+ * Stats API
+ */
 export const statsApi = {
     getOverview: (city: string) =>
-        fetchApi<{
-            city: string;
-            city_name: string;
-            total_theaters: number;
-            total_shows_today: number;
-            price_range: {
-                min: number;
-                max: number;
-                avg: number;
-            };
-        }>(`/stats/overview?city=${city}`),
+        apiFetch<OverviewStats>(`/stats/overview?city=${city}`),
 
     getMovieStats: (movieId: number, city?: string) => {
-        const params = city ? `?city=${city}` : "";
-        return fetchApi<{
+        let endpoint = `/stats/movie/${movieId}`;
+        if (city) endpoint += `?city=${city}`;
+        return apiFetch<{
             movie_id: number;
             city: string;
             total_shows: number;
@@ -182,23 +200,32 @@ export const statsApi = {
                 avg: number;
                 by_category: Record<string, number>;
             };
-        }>(`/stats/movie/${movieId}${params}`);
+        }>(endpoint);
     },
 
-    getTrending: (city: string, limit?: number) =>
-        fetchApi<{
-            city: string;
-            trending: TrendingMovie[];
-        }>(`/stats/trending?city=${city}&limit=${limit || 10}`),
+    getTrending: (city: string, limit = 10) =>
+        apiFetch<TrendingResponse>(`/stats/trending?city=${city}&limit=${limit}`),
 
     getPriceComparison: (movieId: number, city: string) =>
-        fetchApi<PriceComparison>(`/stats/price-comparison?movie_id=${movieId}&city=${city}`),
+        apiFetch<{
+            movie_id: number;
+            city: string;
+            theaters: Array<{
+                id: number;
+                name: string;
+                chain?: string;
+                min_prices: Record<string, number>;
+                cheapest: number;
+            }>;
+        }>(`/stats/price-comparison?movie_id=${movieId}&city=${city}`),
 };
 
-export default {
-    cities: citiesApi,
-    movies: moviesApi,
-    theaters: theatersApi,
-    shows: showsApi,
-    stats: statsApi,
+/**
+ * Health Check
+ */
+export const healthApi = {
+    check: () => fetch(`${API_BASE_URL}/health`).then(r => r.json()),
+    root: () => fetch(`${API_BASE_URL}/`).then(r => r.json()),
 };
+
+export { API_BASE_URL };

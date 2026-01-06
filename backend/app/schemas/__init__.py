@@ -5,10 +5,13 @@ from app.schemas.movie import (
     MovieBase,
     MovieResponse,
     MovieListResponse,
+    MovieWithShowsResponse,
     TheaterResponse,
+    TheaterWithShowsResponse,
     ShowResponse,
     SeatCategoryResponse,
     StatsResponse,
+    TrendingMovieResponse,
 )
 
 __all__ = [
@@ -16,8 +19,11 @@ __all__ = [
     "MovieBase",
     "MovieResponse",
     "MovieListResponse",
+    "MovieWithShowsResponse",
     "TheaterResponse",
+    "TheaterWithShowsResponse",
     "ShowResponse",
     "SeatCategoryResponse",
     "StatsResponse",
+    "TrendingMovieResponse",
 ]

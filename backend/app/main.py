@@ -13,8 +13,12 @@ from app.api.routes import cities, movies, theaters, shows, stats
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     """Application lifespan events."""
-    # Startup
-    await init_db()
+    # Startup - try to init database, but continue if it fails (demo mode)
+    try:
+        await init_db()
+        print("Database initialized successfully")
+    except Exception as e:
+        print(f"Database initialization skipped (demo mode): {e}")
     yield
     # Shutdown
     pass
