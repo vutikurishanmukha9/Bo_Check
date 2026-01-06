@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+*.pyc
+*.log
+*.png
+*.jpg
+.env
+backend/*.html
+backend/*.json
+!backend/package.json
+!backend/tsconfig.json
+!frontend/*.json
+node_modules/
