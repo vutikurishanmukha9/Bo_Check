@@ -1,0 +1,103 @@
+{
+  "movie": "Jana Nayagan",
+  "url": "https://in.bookmyshow.com/movies/trichy/jana-nayagan/ET00430817",
+  "city": "trichy",
+  "scrape_time": "2026-01-07T17:32:51.936694",
+  "total_shows": 17,
+  "fast_filling": 0,
+  "available": 17,
+  "sold_out": 0,
+  "unknown": 0,
+  "fast_filling_percentage": 0.0,
+  "occupancy_rate": 0.0,
+  "shows": [
+    {
+      "time": "09:00 AM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:05 AM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:10 AM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "12:40 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "12:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "12:50 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "04:20 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "04:25 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "04:30 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "04:35 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:05 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:10 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "11:40 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "11:55 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "11:55 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    }
+  ],
+  "cinemas_count": 0,
+  "seat_data": null,
+  "total_seats_scanned": null
+}

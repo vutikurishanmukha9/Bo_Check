@@ -1,0 +1,24 @@
+{
+  "movie": "Dhurandhar",
+  "theaters": [
+    "AMB Cinemas: Gachibowli",
+    "Prasads Multiplex: Hyderabad",
+    "Asian Lakshmikala Cinepride: Moosapet",
+    "PVR: Nexus Mall Kukatpally, Hyderabad",
+    "ART CINEMAS: Vanasthalipuram",
+    "AAA Cinemas: Ameerpet",
+    "Aparna Cinemas: Nallagandla"
+  ],
+  "shows_with_availability": [
+    {
+      "time": "10:30 PM",
+      "theater": "AMB Cinemas: Gachibowli",
+      "seats": {
+        "total": 0,
+        "available": 0,
+        "booked": 0,
+        "blocked": 0
+      }
+    }
+  ]
+}

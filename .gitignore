@@ -6,7 +6,6 @@ __pycache__/
 *.jpg
 .env
 backend/*.html
-backend/*.json
 !backend/package.json
 !backend/tsconfig.json
 !frontend/*.json

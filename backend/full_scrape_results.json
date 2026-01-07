@@ -1,0 +1,46 @@
+{
+  "scrape_time": "2026-01-06T21:31:08.072757",
+  "city": "hyderabad",
+  "movies": [
+    {
+      "title": "Dhurandhar",
+      "id": "ET00452447",
+      "theaters": [
+        "AMB Cinemas: Gachibowli",
+        "Prasads Multiplex: Hyderabad",
+        "PVR: Nexus Mall Kukatpally, Hyderabad",
+        "ART CINEMAS: Vanasthalipuram",
+        "AAA Cinemas: Ameerpet"
+      ],
+      "shows": [
+        {
+          "time": "10:30 PM",
+          "total_seats": 309,
+          "available": 123,
+          "booked": 186
+        }
+      ]
+    },
+    {
+      "title": "Avatar: Fire and Ash",
+      "id": "ET00407893",
+      "theaters": [
+        "(110K+ Votes)",
+        "Rate now"
+      ],
+      "shows": []
+    },
+    {
+      "title": "Ikkis",
+      "id": "ET00388415",
+      "theaters": [
+        "AMB Cinemas: Gachibowli",
+        "Prasads Multiplex: Hyderabad",
+        "PVR: Nexus Mall Kukatpally, Hyderabad",
+        "Aparna Cinemas: Nallagandla",
+        "Cinepolis: TNR North City, Suchitra , Hyderabad"
+      ],
+      "shows": []
+    }
+  ]
+}

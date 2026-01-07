@@ -1,0 +1,251 @@
+{
+  "movie": "Dhurandhar",
+  "stats": {
+    "fast_filling": 0,
+    "available": 48,
+    "sold_out": 0,
+    "total": 48
+  },
+  "shows": [
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "03:25 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:35 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:20 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "09:25 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:25 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:30 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:40 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "04:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "07:00 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:30 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:55 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:30 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:35 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "03:40 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "05:20 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:50 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:20 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:50 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "05:15 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:25 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "09:30 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:40 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "03:15 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:15 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "07:15 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "09:00 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:15 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:00 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "07:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:05 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "05:45 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:35 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:00 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:50 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:05 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:30 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:20 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:45 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "04:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "07:05 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "11:10 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "05:35 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "06:25 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "09:50 PM"
+    },
+    {
+      "debug_color": "rgb(102, 102, 102)",
+      "status": "AVAILABLE",
+      "time": "10:40 PM"
+    }
+  ]
+}

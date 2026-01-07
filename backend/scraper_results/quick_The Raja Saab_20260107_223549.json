@@ -1,0 +1,148 @@
+{
+  "movie": "The Raja Saab",
+  "url": "https://in.bookmyshow.com/movies/vizag-visakhapatnam/the-raja-saab/ET00383697",
+  "city": "vizag-visakhapatnam",
+  "scrape_time": "2026-01-07T22:35:49.914842",
+  "total_shows": 26,
+  "fast_filling": 18,
+  "available": 6,
+  "sold_out": 2,
+  "unknown": 0,
+  "fast_filling_percentage": 69.23,
+  "occupancy_rate": 76.92,
+  "shows": [
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": ""
+    },
+    {
+      "time": "09:10 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    }
+  ],
+  "cinemas_count": 0,
+  "seat_data": null,
+  "total_seats_scanned": null
+}

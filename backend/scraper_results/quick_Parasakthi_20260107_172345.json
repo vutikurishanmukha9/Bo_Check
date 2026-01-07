@@ -1,0 +1,123 @@
+{
+  "movie": "Parasakthi",
+  "url": "https://in.bookmyshow.com/movies/chennai/parasakthi/ET00431398",
+  "city": "chennai",
+  "scrape_time": "2026-01-07T17:23:45.643223",
+  "total_shows": 21,
+  "fast_filling": 20,
+  "available": 0,
+  "sold_out": 1,
+  "unknown": 0,
+  "fast_filling_percentage": 95.24,
+  "occupancy_rate": 100.0,
+  "shows": [
+    {
+      "time": "09:00 AM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 AM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 AM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:50 AM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "10:20 AM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "12:10 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "12:40 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "01:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "01:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "03:20 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "03:50 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "04:10 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "04:40 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "06:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "07:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "07:20 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "07:50 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "10:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "11:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "11:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    }
+  ],
+  "cinemas_count": 0,
+  "seat_data": null,
+  "total_seats_scanned": null
+}

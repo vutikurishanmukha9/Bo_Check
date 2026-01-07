@@ -1,0 +1,348 @@
+{
+  "movie": "The Raja Saab",
+  "url": "https://in.bookmyshow.com/movies/bengaluru/the-raja-saab/ET00383697",
+  "city": "bengaluru",
+  "scrape_time": "2026-01-07T22:26:06.993334",
+  "total_shows": 66,
+  "fast_filling": 22,
+  "available": 44,
+  "sold_out": 0,
+  "unknown": 0,
+  "fast_filling_percentage": 33.33,
+  "occupancy_rate": 33.33,
+  "shows": [
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "10:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "10:30 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "08:50 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "10:30 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.FAST_FILLING",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "08:45 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:15 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.AVAILABLE",
+      "cinema": ""
+    }
+  ],
+  "cinemas_count": 0,
+  "seat_data": null,
+  "total_seats_scanned": null
+}

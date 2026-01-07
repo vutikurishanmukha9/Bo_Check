@@ -1,0 +1,32 @@
+{
+  "movie": "Dhurandhar",
+  "theaters": [
+    "ART CINEMAS: Vanasthalipuram",
+    "AAA Cinemas: Ameerpet",
+    "Aparna Cinemas: Nallagandla",
+    "Cinepolis: TNR North City, Suchitra , Hyderabad",
+    "Cinepolis: Lulu Mall, Hyderabad",
+    "INOX: GSM Mall, Hyderabad",
+    "MovieMax: AMR, ECIL Secunderabad",
+    "PVR: Inorbit, Cyberabad",
+    "PVR: Next Galleria Mall, Panjagutta",
+    "Cinepolis: Mantra Mall, Attapur",
+    "INOX: Sattva Necklace Mall, Kavadiguda",
+    "Miraj Cinemas: CineTown, Miyapur",
+    "Asian M Cube Mall: Attapur",
+    "PVR: Atrium Gachibowli, Hyderabad",
+    "INOX: Ashoka One Mall, Kukatpally Y Junction",
+    "Asian CineSquare Multiplex: Uppal",
+    "PVR: Preston, Gachibowli Hyderabad",
+    "PVR: Irrum Manzil, Hyderabad"
+  ],
+  "seat_data": {
+    "showtime": "10:40 PM",
+    "theater": "ART CINEMAS: Vanasthalipuram",
+    "available_count": 0,
+    "blocked_count": 0,
+    "sold_count": 0,
+    "total_booked": 0,
+    "estimated_total": 0
+  }
+}

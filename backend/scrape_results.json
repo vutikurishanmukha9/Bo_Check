@@ -1,0 +1,43 @@
+{
+  "movie": "Dhurandhar",
+  "theaters": [
+    {
+      "name": "AMB Cinemas: Gachibowli",
+      "index": 1
+    },
+    {
+      "name": "Prasads Multiplex: Hyderabad",
+      "index": 2
+    },
+    {
+      "name": "Asian Lakshmikala Cinepride: Moosapet",
+      "index": 3
+    },
+    {
+      "name": "PVR: Nexus Mall Kukatpally, Hyderabad",
+      "index": 4
+    },
+    {
+      "name": "ART CINEMAS: Vanasthalipuram",
+      "index": 5
+    },
+    {
+      "name": "AAA Cinemas: Ameerpet",
+      "index": 6
+    },
+    {
+      "name": "Aparna Cinemas: Nallagandla",
+      "index": 7
+    }
+  ],
+  "total_showtimes": 7,
+  "showtimes": [
+    "10:30 PM",
+    "09:25 PM",
+    "10:30 PM",
+    "10:40 PM",
+    "10:40 PM",
+    "10:10 PM",
+    "10:35 PM"
+  ]
+}

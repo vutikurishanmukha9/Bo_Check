@@ -1,0 +1,29 @@
+{
+  "movie": "Dhurandhar",
+  "theaters": [
+    "AMB Cinemas: Gachibowli",
+    "Prasads Multiplex: Hyderabad",
+    "Asian Lakshmikala Cinepride: Moosapet",
+    "PVR: Nexus Mall Kukatpally, Hyderabad",
+    "ART CINEMAS: Vanasthalipuram"
+  ],
+  "showtime": "10:30 PM",
+  "seat_data": {
+    "__INITIAL_STATE__": "found",
+    "konva": {
+      "layerData": [
+        {
+          "children": 30,
+          "layer": 0
+        },
+        {
+          "children": 1,
+          "layer": 1
+        }
+      ],
+      "layers": 2,
+      "stageHeight": 452,
+      "stageWidth": 1208
+    }
+  }
+}

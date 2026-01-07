@@ -69,13 +69,11 @@ class FastStatusScraper:
         # And check their computed styles against known status colors
         # Orange/Fast Filling: rgb(232, 169, 0)
         # Green/Available: rgb(64, 212, 97)
-        
         results = self.driver.execute_script("""
             var results = [];
             var timeRegex = /^\\d{1,2}:\\d{2}\\s*(AM|PM)?$/i;
             
-            // Find all potential showtime pills (using the class user identified as well)
-            // sc-1vhizuf-2 is the text, sc-1vhizuf-1 is likely the container
+            // Find all potential showtime pills
             var elements = document.querySelectorAll("div[class*='sc-1vhizuf-2']");
             
             elements.forEach(function(el) {
@@ -85,63 +83,63 @@ class FastStatusScraper:
                     var color = style.color;
                     var borderColor = style.borderColor;
                     
-                    // Check parent for border color too
                     var parent = el.parentElement;
                     var parentStyle = window.getComputedStyle(parent);
                     var parentColor = parentStyle.color;
                     var parentBorder = parentStyle.borderColor;
+                    var parentBg = parentStyle.backgroundColor;
                     
-                    var status = "AVAILABLE"; // Default assumption if visible
+                    var status = "AVAILABLE"; // Default
                     
-                    // Helper to check for orange (Fast Filling)
-                    // rgb(232, 169, 0) is #E8A900
-                    var isOrange = function(c) { 
-                        return c.includes("232, 169, 0") || c.includes("232, 169, 0"); 
-                    };
-                    
-                    // Helper to check for Green (Available explicitly)
-                    // rgb(64, 212, 97) is #40D461
-                    var isGreen = function(c) {
-                        return c.includes("64, 212, 97") || c.includes("31, 173, 62");
+                    var isOrange = function(c) { return c.includes("232, 169, 0") || c.includes("232, 169, 0"); };
+                    var isGreen = function(c) { return c.includes("64, 212, 97") || c.includes("31, 173, 62"); };
+                    var isGrey = function(c) { 
+                        // Generic grey check (often 102, 102, 102 or similar, or 153...)
+                        // BMS often uses #999 or #666 for disabled
+                        return c.includes("153, 153, 153") || c.includes("102, 102, 102"); 
                     };
                     
                     if (isOrange(color) || isOrange(borderColor) || isOrange(parentColor) || isOrange(parentBorder)) {
                         status = "FAST FILLING";
                     } else if (isGreen(color) || isGreen(borderColor) || isGreen(parentColor) || isGreen(parentBorder)) {
-                        status = "AVAILABLE (Green)";
+                        status = "AVAILABLE";
+                    } else if (isGrey(color) || isGrey(parentColor) || isGrey(parentBorder) || parentBg.includes("238, 238, 238")) {
+                        status = "SOLD OUT";
                     }
                     
                     results.push({
                         time: text,
                         status: status,
-                        debug_color: color,
-                        debug_parent_border: parentBorder
+                        debug_color: color
                     });
                 }
             });
             return results;
         """)
         
-        fast_filling_count = 0
-        total_count = len(results)
-        
-        print(f"   🎟️ Found {total_count} showtimes")
+        counts = {
+            "fast_filling": 0,
+            "available": 0,
+            "sold_out": 0,
+            "total": len(results)
+        }
         
         for show in results:
             if show['status'] == "FAST FILLING":
-                fast_filling_count += 1
+                counts["fast_filling"] += 1
+            elif show['status'] == "SOLD OUT":
+                counts["sold_out"] += 1
+            else:
+                counts["available"] += 1
                 
-        print(f"   🔥 Fast Filling: {fast_filling_count}")
-        print(f"   ✅ Available: {total_count - fast_filling_count}")
-        
-        # Debug print first few
-        if results:
-            print("   🔍 Sample Data:", results[0])
+        print(f"   🎟️ Total: {counts['total']}")
+        print(f"   🔥 Fast Filling: {counts['fast_filling']}")
+        print(f"   ❌ Sold Out: {counts['sold_out']}")
+        print(f"   ✅ Available: {counts['available']}")
             
         return {
             "movie": movie_title,
-            "total_shows": total_count,
-            "fast_filling": fast_filling_count,
+            "stats": counts,
             "shows": results
         }
 

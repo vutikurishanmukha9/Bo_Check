@@ -1,0 +1,87 @@
+{
+  "movie": "Dhurandhar",
+  "total_shows": 20,
+  "fast_filling": 0,
+  "shows": [
+    {
+      "time": "10:30 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:30 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:10 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:35 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:10 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:10 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "09:30 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:15 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:00 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:50 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:20 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:45 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:45 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "09:50 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:20 PM",
+      "status": "AVAILABLE"
+    },
+    {
+      "time": "10:45 PM",
+      "status": "AVAILABLE"
+    }
+  ]
+}

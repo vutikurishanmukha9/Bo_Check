@@ -1,0 +1,75 @@
+{
+  "movie": "Dhurandhar",
+  "city": "Hyderabad",
+  "theaters": [
+    "AMB Cinemas: Gachibowli",
+    "Prasads Multiplex: Hyderabad",
+    "PVR: Nexus Mall Kukatpally, Hyderabad",
+    "ART CINEMAS: Vanasthalipuram",
+    "AAA Cinemas: Ameerpet",
+    "Aparna Cinemas: Nallagandla",
+    "Cinepolis: TNR North City, Suchitra , Hyderabad",
+    "Cinepolis: Lulu Mall, Hyderabad",
+    "INOX: GSM Mall, Hyderabad",
+    "MovieMax: AMR, ECIL Secunderabad"
+  ],
+  "showtime": "10:30 PM",
+  "seats": {
+    "available": 0,
+    "booked": 185,
+    "details": [
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      },
+      {
+        "class": "other",
+        "fill": "#E5E5E5",
+        "type": "Rect"
+      }
+    ],
+    "other": 124,
+    "total": 309
+  }
+}

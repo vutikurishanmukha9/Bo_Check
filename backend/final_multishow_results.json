@@ -1,0 +1,24 @@
+{
+  "movie": "Dhurandhar",
+  "shows_scraped": 2,
+  "total_showtimes_found": 20,
+  "shows": [
+    {
+      "showtime": "10:30 PM",
+      "total": 309,
+      "booked": 179,
+      "available": 130
+    },
+    {
+      "showtime": "10:30 PM",
+      "total": 250,
+      "booked": 203,
+      "available": 47
+    }
+  ],
+  "aggregate": {
+    "total_seats": 559,
+    "total_booked": 382,
+    "total_available": 177
+  }
+}

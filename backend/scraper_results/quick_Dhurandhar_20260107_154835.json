@@ -1,0 +1,394 @@
+{
+  "movie": "Dhurandhar",
+  "url": "https://in.bookmyshow.com/movies/hyderabad/dhurandhar/ET00452447",
+  "city": "hyderabad",
+  "scrape_time": "2026-01-07T15:48:35.126462",
+  "total_shows": 47,
+  "fast_filling": 0,
+  "available": 0,
+  "sold_out": 47,
+  "unknown": 0,
+  "fast_filling_percentage": 0.0,
+  "occupancy_rate": 100.0,
+  "shows": [
+    {
+      "time": "03:25 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:35 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:20 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "09:25 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:25 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:30 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "04:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "07:00 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:30 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:55 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:30 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:35 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "03:40 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "05:20 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:50 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:20 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:50 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "05:15 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:25 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "09:30 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:15 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "07:15 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "09:00 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:15 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:00 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "07:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:05 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "05:45 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:35 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:00 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:50 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:05 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:30 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:20 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:45 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "04:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "07:05 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "11:10 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "05:35 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "06:25 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "09:50 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    },
+    {
+      "time": "10:40 PM",
+      "status": "ShowStatus.SOLD_OUT",
+      "cinema": "",
+      "screen_type": null,
+      "price_range": null,
+      "debug_color": "rgb(102, 102, 102)"
+    }
+  ],
+  "cinemas_count": 0,
+  "seat_data": null,
+  "total_seats_scanned": null
+}
